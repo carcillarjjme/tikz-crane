@@ -1,0 +1,65 @@
+\definecolor{darkslategray}{HTML}{2B4141}
+\definecolor{pacificblue}{HTML}{0EB1D2}
+\definecolor{fluorescentblue}{HTML}{34E4EA}
+\definecolor{opal}{HTML}{8AB9B5}
+\definecolor{bone}{HTML}{C8C2AE}
+
+\definecolor{orangepeel}{HTML}{FF9F1C}
+\definecolor{mellowapricot}{HTML}{FFBF69}
+\definecolor{lightcyan}{HTML}{CBF3F0}
+\definecolor{tiffanyblue}{HTML}{2EC4B6}
+\definecolor{mediumturqoise}{HTML}{41C9BD}
+
+\tikzset{%
+	Arabbit/.style={
+		circle,draw, text = white, inner sep = 1pt, fill = darkslategray, font = \tiny
+	},
+	Brabbit/.style={
+		circle,draw,inner sep = 1pt, fill = pacificblue, font = \tiny
+	},
+	Crabbit/.style={
+		circle,draw,inner sep = 1pt, fill = fluorescentblue, font = \tiny
+	},
+	Drabbit/.style={
+		circle,draw,inner sep = 1pt, fill = opal, font = \tiny
+	},
+	Erabbit/.style={
+		circle,draw,inner sep = 1pt, fill = bone, font = \tiny
+	},
+	Frabbit/.style={
+		circle,draw, text = white, inner sep = 1pt, fill = darkslategray, font = \tiny
+	},
+	Grabbit/.style={
+		circle,draw,inner sep = 1pt, fill = pacificblue, font = \tiny
+	},
+	Hrabbit/.style={
+		circle,draw,inner sep = 1pt, fill = fluorescentblue, font = \tiny
+	},
+}
+
+\tikzset{
+	woodlabel/.style = {inner sep = 1pt,anchor = north,scale = 1,font = \tiny}
+}
+
+
+
+\tikzset{
+	boxchar/.style={
+		rectangle,
+		inner sep=0pt,
+		text width=3mm,
+		align=center,
+		draw=black,
+		minimum height = 3mm,
+		font = \small,
+	}
+}
+
+\newcommand{\boxchar}[1][$\phantom{5}$]{%
+	\tikz[baseline=-0.8ex]{\node[boxchar] at (0,0) {#1};}
+}
+
+\newcommand{\pair}[1]{
+	\node[#1] (male) {M};
+	\node[#1,right = 1mm of male] {F};\\
+}
