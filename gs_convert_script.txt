@@ -1,0 +1,1 @@
+gswin64c -dNOPAUSE -dBATCH -sDEVICE=jpeg -r600 -dJPEGQ=100 -sOutputFile=output.jpg input.pdf
